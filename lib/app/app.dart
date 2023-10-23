@@ -1,5 +1,7 @@
+import 'package:firebase_auth/core/resources/theme_manager.dart';
 import 'package:firebase_auth/core/utils/route_manager.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp._internal();
@@ -14,6 +16,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(onGenerateRoute: RouteManager.generateRoute);
+    return ScreenUtilInit(
+        child: MaterialApp(
+            theme: getAppTheme(), onGenerateRoute: RouteManager.generateRoute));
   }
 }
