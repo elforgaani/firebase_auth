@@ -47,6 +47,13 @@ class AppPadding {
   static const double p55 = 55;
 }
 
+class AppRadius {
+  static const double r8 = 8;
+  static const double r10 = 10;
+  static const double r12 = 12;
+  static const double r20 = 20;
+}
+
 class MediaQueryValues {
   static const double q_1 = 0.1;
   static const double q_2 = 0.2;
